@@ -2,7 +2,7 @@ import mysql from 'mysql2/promise';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-
+res.setHeader('Access-Control-Allow-Origin', '*');
 export default async function handler(req, res) {
   // 1. UNIVERSAL CORS HEADERS (Allows all domains for testing)
   res.setHeader('Access-Control-Allow-Credentials', true);
