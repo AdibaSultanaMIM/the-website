@@ -52,7 +52,9 @@
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch('https://YOUR-PROJECT.vercel.app/api/register', {
+     // Change this line to match your specific Vercel domain
+        const response = await fetch('https://the-website1.vercel.app/api/register', {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
